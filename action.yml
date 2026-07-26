@@ -1,0 +1,20 @@
+name: "cnpj-scan — prontidão para o CNPJ alfanumérico"
+description: "Varre o código atrás de padrões que quebram com o CNPJ alfanumérico (IN RFB 2.229/2024): colunas numéricas, regex só-dígitos, conversões para número, máscaras."
+author: "CNPJcomLetras.com.br"
+branding:
+  icon: "search"
+  color: "green"
+
+inputs:
+  path:
+    description: "Diretório a analisar (relativo à raiz do repositório)"
+    required: false
+    default: "."
+  fail-on:
+    description: "Quando falhar o build: 'alta' (só achados de severidade ALTA), 'media' (ALTA ou MÉDIA) ou 'never' (nunca falha, só reporta)"
+    required: false
+    default: "alta"
+
+runs:
+  using: "node20"
+  main: "run-scan.js"

@@ -1,5 +1,5 @@
 name: "cnpj-scan — prontidão para o CNPJ alfanumérico"
-description: "Varre o código atrás de padrões que quebram com o CNPJ alfanumérico (IN RFB 2.229/2024): colunas numéricas, regex só-dígitos, conversões para número, máscaras."
+description: "Varre o código em cada PR atrás de padrões que quebram com o CNPJ alfanumérico: colunas numéricas, regex e conversões."
 author: "CNPJcomLetras.com.br"
 branding:
   icon: "search"
